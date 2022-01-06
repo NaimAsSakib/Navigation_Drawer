@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/drawable/ic_menu_logo_police.xml" value="0.25833333333333336" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/menuheader.xml" value="0.2421875" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/menu/iconsmenu.xml" value="0.2421875" />
       </map>
     </option>
