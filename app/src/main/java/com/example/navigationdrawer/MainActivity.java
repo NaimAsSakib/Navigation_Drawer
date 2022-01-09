@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.menuMessage:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new MessageFragment()).commit();
                         Toast.makeText(getApplicationContext(), "Message panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
