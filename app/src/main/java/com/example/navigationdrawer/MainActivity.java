@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.menulogout:
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new LogoutFragment()).commit();
-                        Toast.makeText(getApplicationContext(), "Change Password panel is open", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Logout panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
