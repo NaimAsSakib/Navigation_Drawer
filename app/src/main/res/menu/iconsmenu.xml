@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<item android:id="@+id/menuMessage"
-    android:icon="@drawable/ic_message_2359"
-    android:title="Message"/>
+    <item
+        android:id="@+id/menuMessage"
+        android:icon="@drawable/ic_message_2359"
+        android:title="Message" />
 
-    <item android:id="@+id/menuArchivedMessage"
+    <item
+        android:id="@+id/menuArchivedMessage"
         android:icon="@drawable/ic_archivemessage_2359"
-        android:title="Archived Message"/>
+        android:title="Archived Message" />
 
-    <item android:id="@+id/menuNotification"
+    <item
+        android:id="@+id/menuNotification"
         android:icon="@drawable/ic_icon_notification"
-        android:title="Notification"/>
+        android:title="Notification" />
 
-    <item android:id="@+id/menuProfile"
+    <item
+        android:id="@+id/menuProfile"
         android:icon="@drawable/ic_profile_2385"
-        android:title="Profile"/>
+        android:title="Profile" />
 
-    <item android:id="@+id/menuChangePass"
+    <item
+        android:id="@+id/menuChangePass"
         android:icon="@drawable/ic_changepassword"
-        android:title="Password"/>
+        android:title="Password" />
 
 
 </menu>

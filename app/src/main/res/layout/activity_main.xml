@@ -9,31 +9,40 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         >
 
-        <Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#0b4177"
+            android:layout_height="?actionBarSize"
+            android:background="#00BCD4"
+            android:titleTextColor="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:popupTheme="@style/Theme.AppCompat.Light"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:title="Navigation drwer demo"
-            android:titleTextColor="@color/white"/>
+            app:title="Navigation drawer demo " />
 
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/navViewMenu"
-            app:menu="@menu/iconsmenu"
-            app:headerLayout="@layout/menuheader"
-            app:layout_constraintStart_toStartOf="@id/toolBar"
-            app:layout_constraintTop_toTopOf="@id/toolBar"/>
-
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/iconsmenu"
+            app:headerLayout="@layout/menuheader"
+            android:layout_gravity="start"/>
+
+
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
