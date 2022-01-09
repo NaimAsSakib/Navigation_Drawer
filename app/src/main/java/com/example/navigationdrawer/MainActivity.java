@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menuArchivedMessage:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new ArchivedMessageFragment()).commit();
                         Toast.makeText(getApplicationContext(), "Archived Message panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;

@@ -6,7 +6,11 @@
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/drawable/ic_menu_logo_police.xml" value="0.25833333333333336" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/drawable/itemtextcustom.xml" value="0.25833333333333336" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/fragment_archived_message.xml" value="0.2421875" />
+        <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/fragment_change_pass.xml" value="0.2421875" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/fragment_message.xml" value="0.2421875" />
+        <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/fragment_notification.xml" value="0.2421875" />
+        <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/fragment_profile.xml" value="0.2421875" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/itemtextcustom.xml" value="0.2421875" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/itemtextcustomization.xml" value="0.2421875" />
         <entry key="..\:/AndroidStudioProjects/NavigationDrawer/app/src/main/res/layout/menuheader.xml" value="0.2421875" />
