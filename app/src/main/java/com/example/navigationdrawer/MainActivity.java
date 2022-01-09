@@ -50,16 +50,19 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menuNotification:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new NotificationFragment()).commit();
                         Toast.makeText(getApplicationContext(), "Notification panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.menuProfile:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new ProfileFragment()).commit();
                         Toast.makeText(getApplicationContext(), "Profile panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.menuChangePass:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new ChangePassFragment()).commit();
                         Toast.makeText(getApplicationContext(), "Change Password panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
