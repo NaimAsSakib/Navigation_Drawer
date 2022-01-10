@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -38,15 +39,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.menuMessage:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new MessageFragment()).commit();
-                        Toast.makeText(getApplicationContext(), "Message panel is open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                        openFragment(new MessageFragment(),"Messgae panel is open");
                         break;
 
                     case R.id.menuArchivedMessage:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new ArchivedMessageFragment()).commit();
-                        Toast.makeText(getApplicationContext(), "Archived Message panel is open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                        openFragment(new ArchivedMessageFragment(),"Archived Messgae panel is open");
                         break;
 
                     case R.id.menuNotification:
@@ -86,5 +83,10 @@ public class MainActivity extends AppCompatActivity {
         }else{
             super.onBackPressed();
         }
+    }
+    private void openFragment(Fragment fragment, String msg){
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,fragment).commit();
+        Toast.makeText(getApplicationContext(),msg, Toast.LENGTH_LONG).show();
+        drawerLayout.closeDrawer(GravityCompat.START);
     }
 }
